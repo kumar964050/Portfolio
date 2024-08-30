@@ -1,0 +1,40 @@
+.contact_section {
+  min-height: 90vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact_form .title {
+  color: var(--high--1);
+}
+.contact_form .desc {
+  color: var(--text--color--3);
+  font-size: 0.8rem;
+}
+.contact_form div {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.contact_form input,
+.contact_form textarea {
+  width: 50%;
+  height: 44px;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  padding: 10px 15px;
+  outline: none;
+}
+textarea {
+  min-width: 100%;
+  min-height: 150px;
+  max-height: 250px;
+  resize: vertical;
+}

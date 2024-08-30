@@ -1,0 +1,98 @@
+.header_section {
+  position: sticky;
+  top: 0;
+  height: 70px;
+  background-color: #ffffff80;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--text--color--4);
+  z-index: 909090;
+}
+
+.header_section a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text--color--1);
+}
+.nav_title {
+  font-size: 34px;
+  color: var(--high--1) !important;
+}
+
+.menu_icon {
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 10000;
+}
+.close_icon {
+  color: red;
+}
+
+ul {
+  display: none;
+  list-style-type: none;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.show_menu {
+  display: flex;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 100vh;
+  background-color: #fff;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul a {
+  position: relative;
+  display: flex;
+  margin: 10px;
+  z-index: 10000;
+}
+ul a::after {
+  content: "";
+
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  right: 50%;
+
+  height: 2px;
+  width: 0;
+  background-color: var(--text--color--1);
+  transition: 0.2s all;
+}
+ul a:hover::after {
+  left: 0;
+  right: 0;
+  width: 100%;
+  transition: 0.2s all;
+}
+
+@media (width>=768px) {
+  .menu_icon {
+    display: none;
+  }
+  ul,
+  .show_menu {
+    position: relative;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

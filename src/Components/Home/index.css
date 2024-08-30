@@ -1,0 +1,69 @@
+.home_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home_user_info_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home_user_info_container .name {
+  font-size: 2.5rem;
+  color: var(--high--1);
+}
+.home_user_info_container .role {
+  font-size: 1.8rem;
+  color: var(--high--3);
+}
+.description {
+  color: var(--text--color--2);
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  margin: 10px 0 15px;
+  max-width: 550px;
+}
+.btn_container {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.home_user_image_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_user_image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (width>=768px) {
+  .home_section {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .home_user_info_container {
+    width: 50%;
+  }
+  .home_user_info_container p {
+    max-width: 100%;
+  }
+  .home_user_image_container {
+    width: 50%;
+  }
+  .home_user_image_container img {
+    max-width: 400px;
+  }
+}
