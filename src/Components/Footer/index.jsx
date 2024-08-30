@@ -1,7 +1,7 @@
 import React from "react";
 
 // asserts
-import gitHub from "../../assets/images/gitHub.png";
+import gitHub from "./../../assets/images/github.png";
 import mail from "../../assets/images/gmail.png";
 import linkedin from "../../assets/images/linkedin.png";
 
